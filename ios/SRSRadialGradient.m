@@ -35,6 +35,7 @@
         }
     }
     self.gradientLayer.colors = colors;
+    self.opaque = FALSE;
 }
 
 - (void)setGradientCenter:(CGPoint)center
