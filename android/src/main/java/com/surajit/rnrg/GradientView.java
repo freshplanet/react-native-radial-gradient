@@ -67,9 +67,6 @@ public class GradientView extends View {
     }
 
     private void populateDefaultCenterValue(float width, float height){
-        if(centerX<0){
-            centerX = width/2;
-        }
 		if(centerY<0){
             centerY = height/2;
         }
@@ -110,7 +107,7 @@ public class GradientView extends View {
     }
 
     private void drawGradient(){
-        if(centerX<0 || centerY<0 || radius <=0 || colors==null || colors.length <=0)
+        if(centerY<0 || radius <=0 || colors==null || colors.length <=0)
             return;
         if(stops!=null && stops.length != colors.length)
             stops = null;
